@@ -2,7 +2,7 @@
 require 'vendor/autoload.php';
 
 $app = new \Slim\Slim();
-
+$conectionDB = new connectionDB
 $app->get('/', function() {
 	echo "Welcome to Client API";	
 });
