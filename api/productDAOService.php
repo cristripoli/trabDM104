@@ -2,9 +2,10 @@
 require 'vendor/autoload.php';
 
 $app = new \Slim\Slim();
+$app->config('debug', true);
 
 $app->get('/', function() {
-	echo "Welcome to product API";	
+	echo "Welcome to Virtual Store API";	
 });
 
 $app->get('/products', function() use ($app) {
@@ -15,8 +16,8 @@ $app->get('/products', function() use ($app) {
 		$products[] = array(
 			'id' => $product['id'],
 			'name' => $product['name'],
-			'description' => $product['description']
-            'price' => $product['price'],
+			'description' => $product['description'],
+            'price' => $product['price']
 		);
 	}
 	

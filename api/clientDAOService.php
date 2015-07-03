@@ -2,10 +2,6 @@
 require 'vendor/autoload.php';
 
 $app = new \Slim\Slim();
-$conectionDB = new connectionDB
-$app->get('/', function() {
-	echo "Welcome to Client API";	
-});
 
 $app->get('/clients', function() use ($app) {
 
@@ -15,7 +11,7 @@ $app->get('/clients', function() use ($app) {
 		$clients[] = array(
 			'id' => $client['id'],
 			'name' => $client['name'],
-			'email' => $client['email']
+			'email' => $client['email'],
             'phone' => $client['phone'],
 			'address' => $client['address'],
 			'city' => $client['city'],

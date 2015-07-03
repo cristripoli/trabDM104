@@ -15,5 +15,5 @@ function getDB() {
 	$db = new NotORM($pdo);
 	return $db;
 }
-$app->run();
+
 ?>

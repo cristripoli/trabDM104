@@ -1,7 +1,7 @@
 var ProductController = {
 	
 	init: function () {
-		ProductController.setForm();
+		//ProductController.setForm();
 		ProductController.showList();
 	},
 	
@@ -86,7 +86,7 @@ var ProductController = {
 	createDT: function(product) {
 		var 
 			dt = document.createElement('dt'),
-			img = ProductController.createImage('http://www.gravatar.com/avatar/hash-md5');
+			img = ProductController.createImage('assets/images/product.png');
 		
 		dt.appendChild(img);
 		dt.className = "photo";
